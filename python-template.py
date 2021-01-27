@@ -16,7 +16,7 @@ def delay_print(s):
 #keyboard interrupt hanadler
 def sigint_handler(signal, frame):
 	delay_print('\nInterrupt caught \n')
-	delay_print("cleaning stack traces... \n")
+	delay_print("\n")
 	sys.exit(0)
 signal.signal(signal.SIGINT,sigint_handler)
 
